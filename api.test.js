@@ -1,7 +1,6 @@
 const api = require('./api');
 
-test('Getting API string', () => {
-    return api().then(data => {
-        expect(data).toBe('api');
-    })
+test('Getting API string', async () => {
+    const respons = await api();
+    expect(respons).toBe('api');
 });

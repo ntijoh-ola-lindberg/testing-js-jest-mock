@@ -12,7 +12,7 @@ Filen math.js innehåller enkla matte-metoder. Filen math.test.js innehåller n�
 
 Läs: https://jestjs.io/docs/using-matchers
 
-# Asynkrona metoder / mocks
+## Asynkrona metoder / mocks
 
 För att tex. slippa göra riktiga API-anrop från tester används "mocks". Man skapar då ett dummie-objekt som automatiskt ersätts när tex. metoden fetch() körs.
 

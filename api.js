@@ -1,10 +1,6 @@
-async function getToken() {
-  return "olas-token"
-}
-
-async function api() {
-  let user = "ola"
-  const result = await fetch(`https://url-spelar-ingen-rol-iom-att-den-ar-mockad/users/${user}/repos`, { method: 'GET', headers: { Authorization: `token ${await getToken()}` } });
+async function login() {
+  const result = await fetch('aoeu');
   return result;
 }
-module.exports = api;
+
+module.exports = login;

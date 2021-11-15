@@ -1,6 +1,13 @@
-const api = require('./api');
+const login = require('./api');
+
+beforeEach(() => {
+    fetch.resetMocks();
+});
 
 test('Getting API string', async () => {
-    const respons = await api();
-    expect(respons).toBe('api');
+
+    fetch.mockResponseOnce(JSON.stringify({ "name": "ola la" }));
+
+    const respons = await login();
+    expect(respons).toBe('logged-in-ok');
 });

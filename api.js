@@ -1,6 +1,8 @@
 async function login() {
-  const result = await fetch('aoeu');
+  const result = await fetch('http://doesnt-matter-its-mocked');
   return result;
 }
 
-module.exports = login;
+async function logout() { }
+
+module.exports = { login, logout }

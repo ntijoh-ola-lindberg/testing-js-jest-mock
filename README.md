@@ -1,4 +1,4 @@
-# Testning i JavaScript
+# Testning i JavaScript med Jest 
 
 Testramverket heter [jest](https://jestjs.io/) med ett tillägg [jest-fetch-mock](https://github.com/jefflau/jest-fetch-mock ).
 

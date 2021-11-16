@@ -4,8 +4,7 @@ Testramverket heter [jest](https://jestjs.io/) med ett tillägg [jest-fetch-mock
 
 ## Kom igång
 
-Installera: `yarn install`
-Köra: `yarn test`
+Installera: `yarn install` och köra: `yarn test`
 
 ## Grunder 
 

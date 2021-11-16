@@ -1,21 +1,22 @@
 # Testning i JavaScript
 
+Testramverket heter [jest](https://jestjs.io/) med ett tillägg [jest-fetch-mock](https://github.com/jefflau/jest-fetch-mock ).
+
 ## Kom igång
 
-Installera: ```yarn install```
-
-Köra: ```yarn test```
+Installera: `yarn install`
+Köra: `yarn test`
 
 ## Grunder 
 
-Filen math.js innehåller enkla matte-metoder. Filen math.test.js innehåller några enkla test för respektive metod. 
+Filerna `math.js` och `math.test.js` innehåller grundläggande metoder.
 
 Läs: https://jestjs.io/docs/using-matchers
 
-## Asynkrona metoder / mocks
+## Asynkrona metoder och *mocks*
 
-För att tex. slippa göra riktiga API-anrop från tester används "mocks". Man skapar då ett dummie-objekt som automatiskt ersätts när tex. metoden fetch() körs.
+För att slippa göra riktiga API-anrop i tester används *mocks*. Man skapar då ett *dummie-objekt* med som automatiskt ersätts vid anrop till `fetch()`.
 
-https://github.com/jefflau/jest-fetch-mock#examples 
+Filerna `api.js` + `api.test.js` innehåller ett exepel för att mocka `fetch()`. Filen `setupJest.js` sätter igång mocks för alla fetch-anrop. Vill du köra några som riktiga anrop går det att välja vilka.
 
-
+Läs: https://jestjs.io/docs/asynchronous & https://github.com/jefflau/jest-fetch-mock#examples Det går att *mocka* utan `jest-fetch-mock` (se jest-dokumentationen).

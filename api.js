@@ -1,8 +1,9 @@
 async function login() {
   const result = await fetch('http://doesnt-matter-its-mocked');
-  return result;
+  const r2 = await result.json()
+  return r2;
 }
 
-async function logout() { }
+async function logout() { throw 'Not implemented' }
 
 module.exports = { login, logout }
